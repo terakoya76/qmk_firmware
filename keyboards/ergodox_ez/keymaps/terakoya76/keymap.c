@@ -21,13 +21,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  [   |           |  ]   |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | ~L1  |      |  Alt | LGui | eisu |                                       | kana |  BS  |  Alt |   ]  | ~L1  |
+ *   | ~L1  |      |  Alt | LGui | eisu |                                       | kana | RGui |  Alt |      | ~L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | Left | Right|       | PgUp | PgDn |
  *                                 ,------|------|------|       |------+------|------.
  *                                 |      |      | Home |       | Up   |      |      |
- *                                 |Space |LShift|------|       |------|Grv/L1| Enter|
+ *                                 |Space |  BS  |------|       |------|Grv/L1| Enter|
  *                                 |      |      | End  |       | Down |      |      |
  *                                 `--------------------'       `--------------------'
  */
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              TG(MDIA), KC_Y,   KC_U,     KC_I,    KC_O,    KC_P,     KC_BSLS,
                        KC_H,   KC_J,     KC_K,    KC_L,    KC_SCLN,  KC_QUOT,
              KC_RBRC,  KC_N,   KC_M,     KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT,
-                               KC_LANG1, KC_BSPC, KC_RALT, KC_RBRC,  KC_FN1,
+                               KC_LANG1, KC_RGUI, KC_RALT, KC_TRNS,  KC_FN1,
              KC_PGUP, KC_PGDN,
              KC_UP,
              KC_DOWN, LT(SYMB,KC_GRV), KC_ENT
